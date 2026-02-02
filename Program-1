@@ -1,0 +1,40 @@
+// import java.io.*;   -- import all the classes of the java.io package, which deals with input and output operations.
+
+class Program {                          // class- keyword used to define a class named Program or blueprint for creating objects.
+    public void Display(){               // public- access specifier, void- return type (no return type or empty), Display- method name
+        System.out.println("Hello");  // system- our computer system (.) access method- output, println- prints with line break
+    }                                   // print- prints without line break
+}       
+
+class Main_P{   //main class and first executable statement from where the complier starts execution (only compulsory part in java prog)
+    public static void main(String args[]){        // static method- they get their memory before their class is instantiated
+        Program obj = new Program();              // syntax: ClassName objectName = new ClassName(); - creating object of class Program
+        obj.Display();                            // new- dyamic memory allocation, obj- object name, ()- constructor
+    }
+}
+
+ /* Access specifiers- (to implement encapsulation and abstraction in OOP)
+ 1. public - accessible from anywhere
+ 2. private - accessible only within the same class
+ 3. protected - accessible within the same package and subclasses in other packages. Can only be used by child or inherited classes
+ 4. default (no specifier) - accessible only within the same package 
+
+ Access specifiers - decides the scope (within the class, function, program and file)
+ Member variables - variables declared inside a class but outside any method (instance variables)
+ Member functions - functions declared inside a class 
+
+ Java is a statically typed language (type for variable is defined at compile time)
+ 
+ public static void main(String args[]){   -  static method- they get their memory before their class is instantiated
+  public - access specifier, static- memory allocation, void- return type (no return type or empty), main- method name
+  if not static- compiler won't read the program
+  we always use 'public' keyword
+  String args[] - Java only reads a string any value passed will be converted to a string. So any value given will be treated
+  or read as a string by java compiler
+
+Execution of this program: will start from line 10 (main method), then line 11 (creating object of class Program), then 
+line 3, line 4 (public void display function)
+
+Bimding- linking function calling with function definition
+After reading System.out.println("Hello"); , it will check the import statement.
+*/
