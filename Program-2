@@ -19,9 +19,9 @@ class Program{
         System.out.println("Grade="+Grade);
         System.out.println("Marks="+Marks);
         System.out.println("Percentage="+Per);
+    }
         public static void main(String args[]){
             Program obj= new Program();
             obj.Display();
         }
     }
-}
