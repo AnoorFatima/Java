@@ -1,0 +1,27 @@
+/*Variiable declaration in Java
+Java is a satically typed language 
+For Variable Declaration, first we have to define data type variablename;
+Variable Initialization in Java 
+1. Direct
+2. Accept scanner/next() 
+Direct  Method:
+*/
+import java.io.*;
+class Program{
+    public int Rollno;
+    String Name="ABC";
+    char Grade='A';
+    float Marks=450f;
+    double Per=90.5;
+    public void Display(){
+        System.out.println("Student Information is \nRollNo is"+Rollno);
+        System.out.println("Name="+Name);
+        System.out.println("Grade="+Grade);
+        System.out.println("Marks="+Marks);
+        System.out.println("Percentage="+Per);
+        public static void main(String args[]){
+            Program obj= new Program();
+            obj.Display();
+        }
+    }
+}
