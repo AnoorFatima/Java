@@ -1,0 +1,25 @@
+/*Sample Program to accept different data types values at runtime using Scanner class and next() method */
+import java.io.*;
+import java.util.Scanner;    // Step-1: to accept value at runtime
+class Program{
+    int n;
+    String Name;
+    char Grade;
+    float Marks;
+    double per;
+    boolean result;
+    public void accept(){
+        Scanner sc= new Scanner(System.in);         //step-2
+        System.out.print("Enter Number:");
+        n=sc.nextInt();
+    }
+    public void display(){
+        System.out.println("Value of n is "+n);
+    }
+
+public static void main(String args[]){
+    Program obj = new Program();
+    obj.accept();
+    obj.display();
+        }
+    }
