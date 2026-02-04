@@ -37,3 +37,5 @@ public static void main(String args[]){
     obj.display();
         }
     }
+/* Write a program to accept 5 numbers from user and calculate average as per average value print 
+True or False message on screen for average below 50 print False for average above 50 print True */
