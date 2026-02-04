@@ -1,0 +1,39 @@
+/*Sample Program to accept different data types values at runtime using Scanner class and next() method */
+import java.io.*;
+import java.util.Scanner;    // Step-1: to accept value at runtime
+class Program{
+    int n;
+    String Name;
+    char Grade;
+    float Marks;
+    double per;
+    boolean result;
+    public void accept(){
+        Scanner sc= new Scanner(System.in);         //step-2
+        System.out.print("Enter Number:");
+        Name=sc.nextLine();
+        System.out.print("Enter Grade:");
+        Grade=sc.next().charAt(0);
+        System.out.print("Enter Marks:");
+        Marks=sc.nextFloat();
+        System.out.print("Enter Percentage:");
+        per=sc.nextDouble();
+        System.out.print("Enter Boolean value:");
+        result=sc.nextBoolean();
+    }
+    public void display(){
+        System.out.println("Information entered by the user is ");
+        System.out.println("Value of n is "+n);
+        System.out.println("Name is "+Name);
+        System.out.println("Grade is "+Grade);
+        System.out.println("Marks is "+Marks);
+        System.out.println("Percentage is "+per);
+        System.out.println("Result is "+result);
+    }
+
+public static void main(String args[]){
+    Program obj = new Program();
+    obj.accept();
+    obj.display();
+        }
+    }
