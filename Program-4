@@ -8,28 +8,7 @@ class Program{
     float Marks;
     double per;
     boolean result;
-    public void accept(){
-        Scanner sc= new Scanner(System.in);         //step-2
-        System.out.print("Enter Number:");
-        Name=sc.nextLine();
-        System.out.print("Enter Grade:");
-        Grade=sc.next().charAt(0);
-        System.out.print("Enter Marks:");
-        Marks=sc.nextFloat();
-        System.out.print("Enter Percentage:");
-        per=sc.nextDouble();
-        System.out.print("Enter Boolean value:");
-        result=sc.nextBoolean();
-    }
-    public void display(){
-        System.out.println("Information entered by the user is ");
-        System.out.println("Value of n is "+n);
-        System.out.println("Name is "+Name);
-        System.out.println("Grade is "+Grade);
-        System.out.println("Marks is "+Marks);
-        System.out.println("Percentage is "+per);
-        System.out.println("Result is "+result);
-    }
+    
 
 public static void main(String args[]){
     Program obj = new Program();
@@ -37,5 +16,3 @@ public static void main(String args[]){
     obj.display();
         }
     }
-/* Write a program to accept 5 numbers from user and calculate average as per average value print 
-True or False message on screen for average below 50 print False for average above 50 print True */
