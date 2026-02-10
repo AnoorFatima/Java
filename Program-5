@@ -1,6 +1,3 @@
-/* Write a program to accept 5 numbers from user and calculate average as per average value print 
-True or False message on screen for average below 50 print False for average above 50 print True */
-
 import java.io.*;
 import java.util.Scanner;
 class Program{
@@ -11,7 +8,7 @@ class Program{
         System.out.println("Enter 5 numbers: ");
         for(int i=0;i<=5;i++){
             System.out.println("Number: ");
-            sum+=sc.nextInt();
+            
         }
         avg=sum/5;
     }
