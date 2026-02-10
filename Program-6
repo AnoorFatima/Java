@@ -24,7 +24,7 @@ Types:
 Process of linking function calling with function definition - binding
 
 Number of parameter or type of parameter or order of parameter:
-
+*/
 import java.io.*;
 import java.util.Scanner;
 class first{
@@ -35,123 +35,8 @@ class first{
         System.out.println("Welcome "+name);
     }
     public static void main(String args[]){
-        first obj=new first();
+        
         obj.welcome("ABC");
         obj.welcome();
-    }
-}
-
-import java.io.*;
-import java.util.Scanner;
-class first{
-    void welcome(){
-        System.out.println("");
-    }
-    void welcome(String name, int roll) {
-        System.out.println("Welcome " + name);
-        System.out.println("Your Roll Number is " + roll);
-    }
-    public static void main(String args[]) {
-        first obj = new first();
-        obj.welcome("ABC", 1);
-    }
-}
-
-Function overriding/method overriding: polymorphism
-    existing class
-    function definition
-    runtime
-    new class obj
-    function update
-    inheritance
-
-
-import java.io.*;
-import java.util.Scanner;
-class program1{
-    void fun1(){
-        System.out.println("Old definition");
-    }
-}
-class program2 extends program1{
-    void fun1(){
-        System.out.println("New definition");
-    }
-}
-class first{
-    public static void main(String args[]){
-        program1 obj=new program1();
-        obj.fun1();
-    }
-}
-
-Write a program to design student management system, develop a function that stores user name
-and display welcome message with student a function to store course details like course code and
-duration now add a provision for a student to update or changing its course code but we want existing
-details of course whenever required
-*/
-
-import java.io.*;
-import java.util.Scanner;
-class Student{
-    String name;
-    String courseCode;
-    String duration;
-    
-    void welcomeStudent(String n) {
-        name = n;
-        System.out.println("Welcome " + name + " to Student Management System");
-    }
-
-    // function to store course details
-    void setCourseDetails(String code, String dur) {
-        courseCode = code;
-        duration = dur;
-    }
-
-    // function to display course details
-    void showCourseDetails() {
-        System.out.println("Course Code: " + courseCode);
-        System.out.println("Duration: " + duration);
-    }
-
-    // function to update course code
-    void updateCourseCode(String newCode) {
-        courseCode = newCode;
-        System.out.println("Course Code updated successfully!");
-    }
-}
-
-public class MainApp {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        Student s = new Student();
-
-        // input student name
-        System.out.print("Enter Student Name: ");
-        String name = sc.nextLine();
-        s.welcomeStudent(name);
-
-        // input course details
-        System.out.print("Enter Course Code: ");
-        String code = sc.nextLine();
-
-        System.out.print("Enter Course Duration: ");
-        String duration = sc.nextLine();
-
-        s.setCourseDetails(code, duration);
-
-        // display existing course details
-        System.out.println("\nExisting Course Details:");
-        s.showCourseDetails();
-
-        // update course code
-        System.out.print("\nEnter New Course Code to Update: ");
-        String newCode = sc.nextLine();
-        s.updateCourseCode(newCode);
-
-        // display updated course details
-        System.out.println("\nUpdated Course Details:");
-        s.showCourseDetails();
     }
 }
