@@ -1,0 +1,40 @@
+/* Constructor in Java:
+1. Special type of method with name same as class name.
+2. Always declared as public
+3. No retuen type not even void
+4. Use to initialize member variables
+5. No need to call, automatically get called when we create instance (object of the class)
+6. Types of constructor:
+default constructor/constructor with default value/parametrized constructor 
+constructor overloading
+7. In inheritance, the hierarchy of constructor is first base class constructor will get invoked
+and then child class constructor even though we always create child class object in inheritance.
+
+*/
+
+class Program{
+    public Program(String name){    //parameterized constructor or constuctor with parameter
+        System.out.println("Welcome to Student Management System " +name);
+        // Code to establish connection with database
+    }
+
+    public Program(){    
+            System.out.println("Welcome to Student Management System");
+            // Code to establish connection with database
+    }
+}
+class Test{
+    public static void main(String args[]){
+        Program obj=new Program("ABC");
+        Program obj1= new Program();
+    }
+}
+
+/*Write a program to design E-commerce store application 
+design a class with name E-commerce store when you run this class it shows all available list of
+offline stores all over the India
+Design a class with User_Login it will automatically promp user to enter its login details design
+a class with name Products it shows all available products with name, code and price design a 
+function to select products from provided list with quantity
+Design a class with namr Cart, here you generate bill and apply discount on items selected
+by the user. */
