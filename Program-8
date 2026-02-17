@@ -1,0 +1,47 @@
+/*
+OOPS:-
+Inheritance- Single/ Multi-level/ Hybrid/ Hierarchical Python
+In Java, we have Single level inheritance and multi-level inheritance only, to
+implement multiple inheritance, we cannot directly implement this using classes
+but it is possible with the help of class and interfaces.
+
+1. Single- In single level inheritance, we have a base class/ parent class or super class
+and derived class/ child class or sub class.
+
+2. Multi Level- In multi level inheritance we cn further extend the derived class as
+the base class for next derived class until we finalize or consider a class as final.
+
+class A
+class B
+class C
+
+Example and Syntax:
+class Parent/Super/Base
+{
+member variables(data)
+member functions (attributes)
+}
+class child/sub/base extend Parent
+{
+member variables (data)
+member functions (attributes)
+}
+class Main
+{
+main()
+}
+obj child
+
+Write a program to create automatic response system 
+1. to design this we have a base class with all the required details for a system to
+respond on a query.
+(a. Course Suggestion for a student looking for a suitable course after 12 suggestion
+based on Humanities/Medical/Non Medical/Commerce
+b. suggest course according to the budget
+c. suggest course according to the duration
+d. suggest course according to the location/online/offline/hybrid)
+2. design a classes to for accepting user queries and handle response
+3. design a main class that have main method and display Menu to display options and
+services available in our automatic response system.
+
+*/
