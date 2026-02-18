@@ -1,0 +1,43 @@
+/*
+Program to demonstrate working of inheritance concepts (how we apply single level and 
+multi level inheritance on classes)
+*/
+import java.util.Scanner;
+class Library_Management_System{
+    int total_books=1000;
+    String Code="Lib01";
+    public void Display(){
+    System.out.println("Welcome to online Library Management System");
+    System.out.println("Total Number of Books " +total_books);
+    System.out.println("Library Code for CSE dept " +Code);
+    }
+}
+class User_info extends Library_Management_System {
+    int reg;
+    String Name;
+    int no_of_books_issued=0;
+    Scanner sc= new Scanner(System.in);
+    void Accept(){
+        System.out.println("Enter your registeration number: ");
+        reg=sc.nextInt();
+        System.out.println("Enter your name: ");
+        Name=sc.next();
+        System.out.println("Enter how many books issued for you by csc");
+        no_of_books_issued=sc.nextInt();
+    }
+    void Display_userinfo(){
+        System.out.println("Login User Information is: ");
+        System.out.println("Name: "+Name);
+        System.out.println("Registeration number: "+reg);
+        System.out.println("Total Books issued are " +no_of_books_issued);
+        System.out.println("Remaining books " +(total_books-no_of_books_issued));
+    }
+}
+class LMS{
+    public static void main(String[] args){
+        User_info obj=new User_info();
+        obj.Display();
+        obj.Accept();
+        obj.Display_userinfo();
+    }
+}
