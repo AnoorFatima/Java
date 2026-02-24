@@ -1,0 +1,83 @@
+/* Write a program to design a menu driven program that first prompt user for a choice
+and works accordingly. 
+To design a clean and easy to upload page, organizations ask to follow a lite design
+for the first user interface (UI).
+1. on running this appliaction, our application Display a Greeting Message from with
+the Comapny's name and a tag line.
+2. display menu ask user to enter numbers between 1 to 5 and against every number
+we have a service call that defines the purpose and functioning of that service.
+Your task here to define and design the service in detail associated with the service number.
+Imagine yourself as a developer, imagine a organization and services your offering with a menu
+driven approach?
+*/
+import java.util.Scanner;
+
+class first {
+    static Scanner sc = new Scanner(System.in);
+    static void registration() {
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+        System.out.println("Registration successful! Welcome " + name);
+    }
+
+    static void Booking() {
+        System.out.println("1. Website Development");
+        System.out.println("2. Mobile App Development");
+        System.out.println("3. Software Installation");
+        System.out.print("Enter service: ");
+        int service = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Service booked successfully!");
+    }
+static void Payment() {
+        System.out.print("Enter amount to pay: ");
+        double amount = sc.nextDouble();
+        sc.nextLine();
+        System.out.println("Payment of Rs." + amount + " done.");
+    }
+
+ 
+    static void Support() {
+        System.out.print("Describe your issue: ");
+        String issue = sc.nextLine();
+        System.out.println("Your request has been submitted.");
+    }
+
+    
+    public static void main(String[] args) {
+        int choice;
+        System.out.println("Welcome to our Company");
+        System.out.println("1. Registration");
+        System.out.println("2. Booking");
+        System.out.println("3. Payment");
+        System.out.println("4. Support");
+        System.out.println("5. Exit");
+        System.out.print("Enter your choice: ");
+
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            if (choice==1) {
+                registration();
+            }
+            else if(choice==2){
+                Booking();
+            }
+            else if(choice==3){
+                Payment();
+            }
+            else if(choice==4){
+                Support();
+            }
+            else{
+                System.out.println("Invalid choice!!!");
+            }
+        }
+}
+/* Write a program to demonstrate working of switch, design a app for tax rebate calculation user
+will enter total income, you will prompt user to enter the choice for tax rebate and amount utilize
+in that section and you will calculate eligible amount for the tax rebate
+1. donation (max eligible amount 100000) and rebate is 2%
+2. insurance (max eligible amount 50000) and rebate is 2.5%
+3. education (max eligible amount 150000) and rebate is 3%
+4. loan (max eligible amount 120000) and rebate is 3%
