@@ -1,0 +1,19 @@
+// File Creating Program
+import java.io.File;
+import java.io.IOException;
+public class CreateFile1{
+    public static void main(String [] args){
+        try{
+            File f=new File("student.txt");
+            if(f.createNewFile())           // createNewFile() predefined function io.File library
+               // if(f.createNewFile()) this will return true if file is created successfully otherwise false
+        System.out.print("File Created");
+    else{
+        System.out.println("File already exists.");
+    }
+}
+    catch(IOException e){
+        System.out.println("Error");
+    }
+}
+    }
