@@ -1,0 +1,30 @@
+/* Accept marks from user define exception when user entered marks out of range valid marks range 0 to 50
+using try catch finally throws block
+Approach 3 */
+import java.util.Scanner;
+public class Marks{
+    Scanner sc=new Scanner(System.in);
+    public void check(){
+        try{
+            System.out.print("Enter marks 0-50: ");
+            int marks=sc.nextInt();
+            if(marks<0||marks>50){
+                throw new Exception("Marks must be between 0 and 50.");  // throw built-in exception
+            }
+            else{
+                System.out.println("Valid Marks:"+marks);
+            }
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        finally{
+            System.out.println("Program ended.");
+        }
+    }
+    public static void main(String args){
+        Marks obj=new Marks();
+        obj.check();
+    }
+}
+// check for valid currency notes= (10/20/50/100/200/500)
